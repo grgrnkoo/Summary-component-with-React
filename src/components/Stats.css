@@ -1,0 +1,113 @@
+:root {
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --white: hsl(0, 100%, 100%);
+    --reaction: hsl(0, 100%, 67%);
+    --reaction-bg: hsla(0, 100%, 67%, 5%);
+    --memory: hsl(39, 100%, 56%);
+    --memory-bg: hsla(39, 100%, 56%, 5%);
+    --verbal: hsl(166, 100%, 37%);
+    --verbal-bg: hsla(166, 100%, 37%, 5%);
+    --visual: hsl(234, 85%, 45%);
+    --visual-bg: hsla(234, 85%, 45%, 5%);
+}
+
+.Stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: .5rem 0;
+    font-weight: 700;
+}
+
+li .category img {
+    margin-right: 1rem;
+}
+
+button {
+    width: 100%;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.Stats h2 {
+    text-align: left;
+    width: 100%;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.stat {
+    padding: 1rem;
+}
+
+#Reaction .category{
+    color: var(--reaction)
+}
+
+#Memory .category{
+    color: var(--memory);
+}
+
+#Verbal .category{
+    color: var(--verbal);
+}
+
+#Visual .category{
+    color: var(--visual);
+}
+
+#Reaction {
+    background-color: var(--reaction-bg);
+}
+
+#Memory {
+    background-color: var(--memory-bg);
+}
+
+#Verbal {
+    background-color: var(--verbal-bg);
+}
+
+#Visual {
+    background-color: var(--visual-bg);
+}
+
+.faded {
+    opacity: .4;
+}
+
+@media only screen and (max-width: 610px) {
+    .Stats {
+        width: 100%;
+    }   
+}
